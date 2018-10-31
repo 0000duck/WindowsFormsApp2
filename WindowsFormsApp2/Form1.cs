@@ -84,7 +84,7 @@ namespace WindowsFormsApp2
                     SqlCommand com = new SqlCommand();
                     com.Connection = conn;
                     com.CommandType = CommandType.Text;
-                        com.CommandText = "INSERT INTO dbo.Data2 (t1,n1,tag) VALUES('" +
+                        com.CommandText = "INSERT INTO dbo.Data3 (t1,n1,tag) VALUES('" +
                             DateTime.Now.ToString() + "'," +
                             notification.Value.WrappedValue.Value.ToString() +
                             ",'" 
