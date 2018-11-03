@@ -53,6 +53,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -71,7 +72,6 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -325,6 +325,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Data Preview";
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("宋体", 12F);
+            this.button7.Location = new System.Drawing.Point(40, 203);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(94, 35);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "Edit";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // label23
             // 
             this.label23.Font = new System.Drawing.Font("宋体", 15F);
@@ -349,7 +360,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(128, 21);
             this.textBox8.TabIndex = 11;
-            this.textBox8.Text = "OPCdata";
+            this.textBox8.Text = "Data2";
             // 
             // label15
             // 
@@ -493,17 +504,6 @@
             this.label22.TabIndex = 18;
             this.label22.Text = " OPC Connection Tool 0.3.4";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("宋体", 12F);
-            this.button7.Location = new System.Drawing.Point(40, 203);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(94, 35);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Edit";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 

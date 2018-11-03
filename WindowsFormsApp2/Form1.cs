@@ -21,6 +21,7 @@ namespace WindowsFormsApp2
         private String[] MonitorNodeTags = null;
         SqlConnection conn;
         Form2 f2;
+        String database;
         public Form1()
         {
        
@@ -34,7 +35,7 @@ namespace WindowsFormsApp2
             textBox1.Text = "ns=2;s=OP030PC.S.AI1-01";
             textBox2.Text = "ns=2;s=OP030PC.S.AI1-01";
             textBox3.Text = "ns=2;s=OP030PC.S.AI1-01";
-
+            database = this.textBox8.Text;
         }
         ~Form1() {
             if (conn != null) {
@@ -84,7 +85,7 @@ namespace WindowsFormsApp2
                     SqlCommand com = new SqlCommand();
                     com.Connection = conn;
                     com.CommandType = CommandType.Text;
-                        com.CommandText = "INSERT INTO dbo.Data3 (t1,n1,tag) VALUES('" +
+                        com.CommandText = "INSERT INTO dbo."+database+" (t1,n1,tag) VALUES('" +
                             DateTime.Now.ToString() + "'," +
                             notification.Value.WrappedValue.Value.ToString() +
                             ",'" 
@@ -129,6 +130,7 @@ namespace WindowsFormsApp2
             textBox1.Enabled = false;
             textBox2.Enabled = false;
             textBox3.Enabled = false;
+            database = textBox8.Text;
         }
 
         private void label2_Click(object sender, EventArgs e)
